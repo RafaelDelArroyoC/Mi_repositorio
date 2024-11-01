@@ -1,0 +1,13 @@
+
+CREATE DATABASE IF NOT EXISTS gestion_libros;
+
+USE gestion_libros;
+
+CREATE TABLE IF NOT EXISTS libros (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    titulo VARCHAR(255) NOT NULL,
+    autor VARCHAR(255) NOT NULL,
+    anio_publicacion INT(11),
+    genero VARCHAR(100),
+    PRIMARY KEY (id)
+);
